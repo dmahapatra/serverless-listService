@@ -1,0 +1,25 @@
+Problem Statement:
+Design and implement a serverless application named ListService using AWS infrastructure and Terraform for infrastructure as code. 
+
+Functional Requirements:
+ - REST API endpoints for head (first element of a list) and tail (all elements of a list except the first one)
+ - request and response should be in JSON format
+ - we are using public cloud to deploy the code and expose the APIs
+ - program and exceptions should be logged properly
+ - IAC using Terraform / Opentofu
+ - the strings are coming from a dynamo DB ( the data is already present in the DB)
+
+Non-functional requirements:
+ - scalable 
+ - available
+ - Cost effective ( pay as you go )
+ - Performance
+ - Security 
+ - Observability 
+
+Considerations:
+ - RPS > 10 but RPS < 1000
+ - solution is effective in single region 
+ - apart from default security of services we are not adding anything on the top of the servicess
+ - cold start is acceptable
+ - This is just a MVP for head and tail functions 
