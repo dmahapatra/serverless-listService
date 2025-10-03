@@ -16,12 +16,6 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "persist" {
-  description = "Whether to persist data in DynamoDB"
-  type        = bool
-  default     = false
-}
-
 variable "lambda_memory" {
   type    = number
   default = 512
